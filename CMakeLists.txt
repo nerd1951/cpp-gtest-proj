@@ -5,13 +5,11 @@ endif()
 
 cmake_minimum_required(VERSION 3.22)
 
+set(CMAKE_CXX_STANDARD 17)
+
 project(proj CXX)
 
 add_executable(${PROJECT_NAME} main.cpp)
-
-set(CMAKE_CXX_STANDARD 17)
-
-# add_subdirectory(external/opencv)
 
 option(PACKAGE_TESTS "Build the tests" ON)
 
